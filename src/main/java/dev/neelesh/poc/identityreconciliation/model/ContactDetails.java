@@ -19,12 +19,12 @@ public class ContactDetails {
     Integer id;
     String phoneNumber;
     String email;
-    @Column(nullable = true)
     Integer linkedId;
-    @Column(nullable = false, columnDefinition = "VARCHAR(10) DEFAULT 'secondary'")
-    String linkPrecedence;
-    LocalDateTime createdAt;
-    LocalDateTime updatedAt;
     @Column(nullable = false)
+    String linkPrecedence;
+    @Column(nullable = false)
+    LocalDateTime createdAt;
+    @Column(nullable = false)
+    LocalDateTime updatedAt;
     LocalDateTime deletedAt;
 }
