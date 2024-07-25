@@ -5,13 +5,13 @@ spring:
   application:
     name: Identity-Reconciliation
   datasource:
-    url: jdbc:mysql://mysqldb:3306/bitespeed
-    username: user
-    password: user
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://dpg-cqh5hgcs1f4s73bju3lg-a.oregon-postgres.render.com/bitespeed_bnfy
+    username: root
+    password: MxixyIzIW5Whafdq93wIT2hS7GX5pW6l
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
