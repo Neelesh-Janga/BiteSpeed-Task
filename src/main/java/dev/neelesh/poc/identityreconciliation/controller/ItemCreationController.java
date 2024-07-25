@@ -15,7 +15,7 @@ public class ItemCreationController {
     
     private final ContactService contactService;
     
-    @PostMapping("/identify")
+    @PostMapping(value = "/identify", consumes = "application/json")
     public ResponseEntity<ConsolidatedContact> identify(@RequestBody Order order) {
         return contactService.getConsolidatedContactResponse(order.getEmail(), order.getPhoneNumber());
     }
