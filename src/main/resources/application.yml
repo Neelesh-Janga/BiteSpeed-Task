@@ -3,15 +3,15 @@ server:
 
 spring:
   application:
-    name: Identity Reconciliation
+    name: Identity-Reconciliation
   datasource:
-    url: jdbc:mysql://localhost:3306/bitespeed
-    username: root
-    password: root
+    url: jdbc:mysql://mysqldb:3306/bitespeed
+    username: user
+    password: user
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQLDialect
